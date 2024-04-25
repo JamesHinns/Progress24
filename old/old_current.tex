@@ -1,0 +1,40 @@
+\section{Overview to date}
+
+Here I detail relevant details to the doctoral study program, excluding other teaching and language learning.
+
+\subsection{Multi-Modal Counterfactual Explanation Method}
+
+The start of my research involved me reading about counterfactual explanations generally as I had no experience with them prior. After this and a review of some multi-modal explanation techniques I started trying to decide how I could create a multi-modal counterfactual method, and how I could improve current image counterfactual methods. \\
+
+My initial idea was to detect objects within an image using a pre-trained object detection model and then blur them, if one of these changed the classification, a counterfactual had been found based on that object. As we had labels for the objects that created the counterfactual, it would be straightforward to produce a simple sentence based on these. \\
+
+At first I just blurred a bounding box, then I moved to segmenting an object within a bounding box, before finally settling (for now) on pre-trained segmentation models. I then experimented with a number of methods using instance, semantic and finally panoptic segmentation. My experiments continued only with panoptic segmentation, as I believed it was a logical format for explanations, but will go back to use other methods eventually.  \\
+
+I combined all sections where no object was segmented to create a “non-detected” segment so that the entire image is split into segments. I then blur each of these segments, and save those that create counterfactuals. \\
+
+I found that this method also allowed simple lossless aggregation of explanations by analysing the labels of counterfactuals. This means for a specific class, the method developed can look at trends among prior and post classes, along with the segment names that cause this. Most simply, this can be done via frequency tables. This was shown in the masters thesis I supervised which I talk about below.
+
+\subsection{Optimisation with Meta Heuristics}
+
+I took the course “Optimisation with Meta Heuristics” as part of my PhD course. As the project for this course, I am combining segments detected in the method I have been developing to improve the coverage of explanations. To mitigate the explosion of combinatorial complexity I have been experimenting with some of the techniques outlined in the class. \\
+
+To solve this problem I have begun experimenting with a number of approaches. I have written abstractly a few of the heuristics, such as greedy search as well as external methods such as least cost branch and bound, and a dynamic programming approach. \\
+
+This has a problem however that each calculation of my original utility function is extremely costly, as the classifier takes time to produce the logits for each prediction. To which I must compare to the original logits. \\
+
+My decision currently is to compute a solution to the problem as though the profits are combined linearly. Then blur these sections, classify the solution to get new logits and calculate new profit, then add this back to the known set of segments and solve the problem iteratively (removing the possibility to repeat that solution) until some stopping condition has been met. \\
+
+The cost of passing to these models is greatly reduced if multiple instances are passed at once, as such I will be passing instances in batches. This means instances will be classified and segmented in batches. The optimisation problem will also be iteratively solved in batches, I will also aim to leverage parallelism across instances to increase performance here further.
+
+\subsection{Masters Supervision and Job Student Hiring}
+
+Alongside my promotor Prof David Martens I co-supervised a masters thesis which focused on producing multi-modal explanations as my initial work did. Upon my recommendation, she used a real-time object detection model to detect objects, blurring each object detected in an image and saving relevant details if any of these produced a class change. \\
+
+Following the students strong performance in her masters, my promoter suggested we hire her as a job student to continue researching. Through discussion with both my promoter and the student, we decided that she would work on integrating LLMs with the textual component of explanations. Both to increase the comprehensibility and add some possible reasoning to this phenominia.
+I have worked with her on the best way to begin doing this, with the hopes of producing a joint paper, which I will discuss in the future planning section.
+
+\subsection{AXA Project}
+
+Myself and another member of the group are working on a XAI based project for AXA. We are going to be producing counterfactuals to analyse a language model they are using as a mail switching system. We have now met with them twice to plan out how we will accomplish this, including a technical meeting with the lead engineer for the creation of the model. We are now just awaiting their final setup to allow us access.
+
+

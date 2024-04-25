@@ -1,0 +1,41 @@
+\section{Overview of Future Planning}
+
+Here I discuss some of the things I am still planning to investigate.
+
+\subsection{Submission of Counterfacutal Method Paper}
+
+My major upcoming goal is to finalise the optimisation to combine segments. Once this is done I hope to write a paper on the initial state of the counterfactual method, with the segment combination. I will focus on the unique aspect this method offers, such as the textual component, semantic meaning of segments produced, and aggregation of explanations. \\
+
+\subsection{Job Student Joint Work}
+
+After this, I hope to produce a joint paper with the masters job student working on incorporating LLMs into the textual component of explanations. As stated in the overview to date section, this will be looking at first what a good textual explanation is, and how we can use LLMs to provide these, and also how well a LLM can reason at why blurring certain objects within an image may change a classification. This work will likely blur together with the user interaction I discuss below. \\
+
+\subsection{User Interaction with Explanations}
+
+I have also been planning to allow more user interaction with the explanation method to tailor the given explanations. One thought is that this could be done in a chatbot format, allowing users to change parameters as well as the segmentation itself. The segmentation model I will soon be changing to is promptable, which could allow users to look at more specific segments than the current general segmentation model I am using allows. This may be useful for example if a user wanted to look at blurring the face of a person rather than a whole person. \\
+
+This could tie in with the method improvement paper I was looking at, such as prompting a generative model on what to produce inside a mask instead of blurring. It could also tie into the joint LLM paper to provide the chatbot experience. \\
+
+One alternative (or addition) to the chatbot angle is to provide a counterfactual dashboard. An engineer could upload a model and a large training set, which can have its explanations computed over some period of time. Domain experts could then explore these explanations, testing them for bias or some other criteria. They could flag explanations they believe are against the intended behaviour which can then be reviewed in bulk to see if patterns occur. From here the automated augmentation of data could occur for retraining (which I discuss in the “improvement of method” section) or some other way to improve the model. \\
+
+\subsection{Improvement of method}
+
+I have already planned a number of improvements to the explanation method which I am yet to implement. I hope to include these as a follow up paper to the first, but these may join with some of the other ideas I previously mentioned. \\
+
+These include investigating different “removal” methods to just blurring the image. As the literature (and our own investigations) have shown these can affect counterfactuals produced. Similarly, I would like to investigate varying the level of removal via another optimisation (or possibly via user interaction), if this was using the blurring method for example, this would be varying the level of blurring. The masters student I supervised showed that adjusting the kernel size of a Gaussian blur to an image greatly affected the counterfactuals we produced. I believe both of these topics should be widely experimented with for a paper to provide understanding on what to use and when to use them. \\
+
+I would also like to look at how different segmentation methods affect counterfactuals more thoroughly. I have done this informally myself, but I would like to do large scale comparisons of these methods. \\
+
+Finally (of well formed ideas) I hope to look at automatic augmentation of datasets based on the aggregate results of counterfactuals. If for example, in the classification of dogs, blurring a person often produces a counterfactual, we can augment the dataset and retrain to hopefully improve the resilience of the model against this kind of shortcut learning. One way I have thought to do this, is to simply take an amount of samples, blur these objects, keep the label the same and add them back to the dataset. I am not sure of the way to decide the number of images I do this with, or how to deal with possible class imbalances yet, but I hope this is still to be looked at. \\
+
+\subsection{Workshop submission}
+
+I would also ideally like to submit to a workshop this year, if I do not have research I yet want to publish, I have the majority of research from my masters I am yet to publish. I published the first few months of research, I could put this into a paper of workshop submission. \\
+
+\subsection{Summer School}
+
+I am looking at participating in a summer school in the next few months within machine learning, computer vision or XAI. I have applied to some already, and decide exactly what and where I want to go based on responses. \\
+
+\subsection{Research Methods Course}
+
+I hope to take the class research methods, if it fits with my schedule next semester, where like Optimisation with meta heuristics I can work on my research as a part of the course. \\
