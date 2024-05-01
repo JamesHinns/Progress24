@@ -1,11 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1714417049 "/home/james/work/Progress24/main.tex" "main.pdf" "main" 1714417049
+["pdflatex"] 1714585479 "/home/james/work/Progress24/main.tex" "main.pdf" "main" 1714585479
   "/etc/texmf/web2c/texmf.cnf" 1710176395 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/james/work/Progress24/main.tex" 1714381960 410 c039b2ec22a9799299ef99f5370325b1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -19,6 +20,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1248133631 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -76,11 +78,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1714007361 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1714007369 2797976 87584c9aa5dde3ca7964919ad2afcef3 ""
-  "1_Intro.tex" 1714413994 2795 b76d3153e774e907ab761ef402a172aa ""
-  "2_Research.tex" 1714416453 4823 a13246c335fdbf97c1112f748f77bc8a ""
-  "3_Requirements_Plus.tex" 1714417049 4623 8934edeeded6433d1c4c592bdea7a082 ""
-  "main.aux" 1714417049 1114 65376e404d427a5c1527ad2a99bef178 "pdflatex"
-  "main.out" 1714417049 378 45d1ff567373cb49f2a4b08e2947e2dd "pdflatex"
+  "1_Intro.tex" 1714552383 2813 044e35feee63876f22063139fadfe0cd ""
+  "2_Research.tex" 1714585479 6022 581b71f02473affe59c191321166a5e4 ""
+  "3_Requirements_Plus.tex" 1714585347 4561 4e953193bc43b40e355bf9ed0874d25c ""
+  "main.aux" 1714585479 1114 65376e404d427a5c1527ad2a99bef178 "pdflatex"
+  "main.out" 1714585479 378 45d1ff567373cb49f2a4b08e2947e2dd "pdflatex"
   "main.tex" 1714381960 410 c039b2ec22a9799299ef99f5370325b1 ""
   (generated)
   "main.aux"

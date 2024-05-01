@@ -7,10 +7,11 @@ It is split into two subsections:
     submitted are highlighted in \textbf{bold}, while those still being actively worked on are in \textit{italics}.
 \item \textbf{Future}: This outlines the research I plan to undertake in the near future.
 \end{enumerate}
-
+\vspace*{-1em}
 \subsection*{Current}
 
 \textbf{XAIStories}\\
+\textbf{Abstract} \\
 In today's critical domains, the predominance of black-box machine learning models amplifies the demand for 
 Explainable AI (XAI). The widely used SHAP values, while quantifying feature importance, are often too 
 intricate and lack human-friendly explanations. Furthermore, counterfactual (CF) explanations present 
@@ -26,13 +27,17 @@ CFstories are considered more or equally convincing as users own crafted stories
 user participants. CFstories also bring a tenfold speed gain in creating a narrative, and improves accuracy by 
 over 20\% compared to manually created narratives. The results thereby suggest that XAIstories may provide the 
 missing link in truly explaining and understanding AI predictions.\\
-\textbf{Aim: To enhance the understanding behind AI predictions for lay-users by providing natural language
-        explanations.}\\
+\textbf{Problem:} Complex machine learning models are often difficult to interpret, many explanations methods are still
+too intricate for lay-users.\\
+\textbf{Solution:} To enhance the understanding behind AI predictions for lay-users by providing natural language
+explanations.\\
 \textit{Currently revising for Decision Support Systems.} \\
-For further details, see the \href{https://arxiv.org/abs/2309.17057}{Link to arXiv paper}. \\
+For further details, see the \href{https://arxiv.org/abs/2309.17057}{arXiv paper}. \\
+
 
 \noindent
 \textbf{CoF Tables}\\
+\textbf{Abstract} \\
 The rise of deep learning in image classification has brought unprecedented accuracy but also highlighted a key 
 issue: the use of `shortcuts' by models. Such shortcuts are easy-to-learn patterns from the training data that 
 fail to generalise to new data. Examples include the use of a copyright watermark to recognise horses, snowy 
@@ -44,23 +49,31 @@ a novel approach that aggregates instance-based explanations into global insight
 The aggregation implies the need for some semantic concepts to be used in the explanations, which we solve by 
 labelling the segments of an image. We demonstrate the utility of CoF tables across several datasets, revealing 
 the shortcuts learned from them.\\
-\textbf{Aim: To detect shortcuts in image classification models through the aggregation of local explanations.}\\
-\textit{Currently under review at SIGKDD, likely resubmitting to NeurIPS.} \\
+\textbf{Problem:} As deep learning models achieve high accuracy in image classification, they often rely on 
+`shortcuts'—simple, non-generalisable patterns learned from training data (such as recognising horses by copyright 
+watermarks, or huskies by snowy backgrounds). These shortcuts can lead to failures when models encounter new data. 
+Detecting these shortcuts typically requires examining numerous instance-level explanations, a process that is 
+time-consuming and labour-intensive. \\
+\textbf{Solution:} Aggregate instance-level explanations into global insights to expose shortcuts.\\
+\textit{Currently under review at SIGKDD, likely reworking and submitting to a journal} \\
 An initial version of this work was presented at the 2023 ECML PhD Forum.
 
 \subsection*{Future}
-
+Below is a list of some of the projects I am currently working on or plan to work on in the near future.
 Titles in bold are currently being worked on, those in italics have yet to be started.
 
 \begin{itemize}
-    \item \textbf{PCherry}: Given a set of counterfactuals what is the probablilty that they include 
+    \item \textbf{PCherry}: For a given data point and model, many different counterfactual explanations can be 
+    generated due to variations in algorithms, a lack of ground truth to optimise for, and non-deterministic behaviour.
+    This phenomenon is known as the disagreement problem. Given this potential for variability, malicious actors can 
+    cherry-pick explanations to support a specific narrative, such as fair-washing.
+    PCherry aims to provide a metric to evaluate the probability that a given set of counterfactuals includes
     cherry-picked explanations. Collaboration with two members of my research group.
     \item \textbf{AXA Collaboration}: Improving mail switching LLM through the analysis of counterfactual explanations.
-    \item \textit{Fairness in Image Classification}: An investigation into the fairness of image classification 
-    models using CoF tables.
-    \item \textit{PCherry Fairness Spin-Off}: Examines the propensity of counterfactual explanations to 
-    fairwash through optimisations aimed at enhancing plausibility and sparsity.
+    % \item \textit{Fairness in Image Classification}: An investigation into the fairness of image classification 
+    % models using CoF tables.
+    % \item \textit{PCherry Fairness Spin-Off}: Examines the propensity of counterfactual explanations to 
+    % fairwash through optimisations aimed at enhancing plausibility and sparsity.
     \item \textit{CoF Tables 2.0}: Improving CoF tables through combinations of segments, 
     new segmentation and edit functions. Ablation studies to measure effectiveness of different components.
-    \item Personalised Explanation Improvement.
 \end{itemize}
